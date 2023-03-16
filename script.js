@@ -264,13 +264,15 @@ function checkAnswer(answer) {
   if (!answered) {
     total_answered += 1;
     if (answer == correct_index) {
-      document.getElementById("answer" + correct_index).style.backgroundColor =
-        "green";
+      document
+        .getElementById("answer" + correct_index)
+        .classList.add("correct");
       total_correct += 1;
     } else {
-      document.getElementById("answer" + correct_index).style.backgroundColor =
-        "green";
-      document.getElementById("answer" + answer).style.backgroundColor = "red";
+      document
+        .getElementById("answer" + correct_index)
+        .classList.add("correct");
+      document.getElementById("answer" + answer).classList.add("incorrect");
     }
   }
   answered = true;
@@ -311,6 +313,7 @@ function lock_buttons() {
   } else {
     document.getElementById("prev").classList.remove("disabled");
   }
+
   if (current_index_questions == questions.length - 1) {
     document.getElementById("next").classList.add("disabled");
   } else {
@@ -320,7 +323,7 @@ function lock_buttons() {
 
 function reset() {
   for (var i = 0; i < 4; i++) {
-    document.getElementById("answer" + i).style.backgroundColor = "#4CAF50";
+    document.getElementById("answer" + i).className = "answers";
   }
   answered = false;
   lock_buttons();
