@@ -379,8 +379,10 @@ function toggleTheme() {
   if (theme.getAttribute("href") == "css/dark-theme.css") {
     theme.href = "css/light-theme.css";
     img.src = "assets/moon.svg";
+    img.alt = "moon";
   } else {
     theme.href = "css/dark-theme.css";
     img.src = "assets/sun.svg";
+    img.alt = "sun";
   }
 }
