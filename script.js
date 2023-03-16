@@ -6,6 +6,99 @@ let total_answered = 0;
 let total_correct = 0;
 
 let questions = [
+  // {
+  //   type: "vanlig",
+  //   sporsmal:
+  //     "",
+  //   svar: "",
+  //   alt: [
+  //     "",
+  //     "",
+  //     "",
+  //   ],
+  // },
+  {
+    type: "vanlig",
+    sporsmal: "Hva er innkapsling i Java?",
+    svar: "En måte å begrense tilgangen til egenskaper og metoder i en klasse",
+    alt: [
+      "En måte å skjule implementasjonen av en metode fra andre klasser",
+      "En måte å legge til nye egenskaper og metoder i en klasse",
+      "En måte å lage nye klasser fra eksisterende klasser",
+    ],
+  },
+  {
+    type: "vanlig",
+    sporsmal: "Hva er en konstruktør i Java?",
+    svar: "En metode som kan kalles på en klasse for å opprette et nytt objekt",
+    alt: [
+      "En metode som kan kalles på et objekt for å endre dets tilstand",
+      "En metode som kan kalles på en klasse for å slette et objekt",
+      "En metode som kan kalles på en klasse for å kopiere et objekt",
+    ],
+  },
+  {
+    type: "vanlig",
+    sporsmal: "Hva er en grensesnitt i Java?",
+    svar: "En samling av egenskaper og metoder som må implementeres av en klasse",
+    alt: [
+      "En klasse som ikke kan instansieres",
+      "En klasse som kan ha statiske metoder og variabler",
+      "En samling av metoder og egenskaper som kan implementeres av en klasse, men ikke må",
+    ],
+  },
+  {
+    type: "vanlig",
+    sporsmal: "Hva er arv i Java?",
+    svar: "En måte å lage nye klasser fra eksisterende klasser",
+    alt: [
+      "En måte å kopiere kode fra én klasse til en annen",
+      "En måte å legge til nye egenskaper og metoder i en klasse",
+      "En måte å begrense tilgangen til egenskaper og metoder i en klasse",
+    ],
+  },
+  {
+    type: "vanlig",
+    sporsmal:
+      "Hva er forskjellen mellom en abstrakt klasse og et interface i Java?",
+    svar: "En abstrakt klasse kan implementere metoder, mens et interface ikke kan det.",
+    alt: [
+      "En abstrakt klasse kan ikke ha konstruktører, mens et interface kan det.",
+      "En abstrakt klasse kan ikke arves, mens et interface kan.",
+      "En abstrakt klasse og et interface er det samme i Java.",
+    ],
+  },
+  {
+    type: "vanlig",
+    sporsmal: 'Hva betyr det å si at et objekt i Java er "immutable"?',
+    svar: "Det betyr at objektet kan ikke endres etter at det er opprettet.",
+    alt: [
+      "Det betyr at objektet er ugyldig.",
+      "Det betyr at objektet er et grensesnitt.",
+      "Det betyr at objektet kan endres etter at det er opprettet.",
+    ],
+  },
+  {
+    type: "vanlig",
+    sporsmal: "Hva er forskjellen mellom en klasse og et objekt i Java?",
+    svar: "En klasse er en mal for å skape objekter, mens et objekt er en instans av en klasse.",
+    alt: [
+      "En klasse er en samling av objekter, mens et objekt er en samling av metoder.",
+      "En klasse og et objekt er det samme i Java.",
+      "En klasse er en datatype, mens et objekt er en variabel.",
+    ],
+  },
+  {
+    type: "vanlig",
+    sporsmal: "Hva er en klasse i Java?",
+    svar: "En mal for å skape objekter",
+    alt: [
+      "En type variabel",
+      "En samling av metoder",
+      "En samling av objekter",
+    ],
+  },
+
   {
     type: "vanlig",
     sporsmal: "Alle klasser untatt ___ arver fra en klasse.",
