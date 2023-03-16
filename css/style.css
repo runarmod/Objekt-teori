@@ -1,7 +1,5 @@
 body {
   text-align: center;
-  background-color: #121212;
-  color: #eee;
 }
 
 #wrapper {
@@ -11,9 +9,7 @@ body {
 
 button {
   width: 100%;
-  background-color: #2c2c2c;
   border: none;
-  color: white;
   padding: 15px 32px;
   text-decoration: none;
   display: block;
@@ -23,25 +19,11 @@ button {
 }
 
 .disabled {
-  background-color: #c0c0c0;
   cursor: not-allowed;
 }
 
 .answers {
-  background-color: #bb80fc;
   width: 100%;
-}
-
-.answers:hover {
-  background-color: #3700b3;
-}
-
-.correct {
-  background-color: #03dac6;
-}
-
-.incorrect {
-  background-color: #cf6679;
 }
 
 p {
@@ -64,10 +46,6 @@ p {
   flex-basis: 40%;
 }
 
-.navigate:hover {
-  background-color: #3700b3;
-}
-
 #next-score {
   display: inline-flex;
   flex-direction: row;
@@ -75,6 +53,54 @@ p {
 }
 
 img {
-  max-height: 400px; 
+  max-height: 400px;
   width: auto;
 }
+
+#theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px !important;
+  height: 50px !important;
+  margin: 10px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+#theme-svg {
+  width: 50%;
+  height: 50%;
+}
+
+/* COLOR */
+
+.disabled {
+  background-color: #c0c0c0;
+}
+
+.answers {
+  background-color: #bb80fc;
+}
+
+.answers:hover {
+  background-color: #3700b3;
+}
+
+.correct {
+  background-color: #03dac6;
+}
+
+.incorrect {
+  background-color: #cf6679;
+}
+
+.navigate:hover {
+  background-color: #3700b3;
+}
+
+button {
+  background-color: #4d4d4d;
+  color: white;
+}
+

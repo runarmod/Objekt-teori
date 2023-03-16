@@ -295,7 +295,9 @@ function displayQuestion() {
 
   if (questions[current_index_questions].type == "forstoelse") {
     file =
-      "assets/forstoelse" + questions[current_index_questions].index + ".png";
+      "assets/oppgavebilder/forstoelse" +
+      questions[current_index_questions].index +
+      ".png";
     document.getElementById("image").innerHTML =
       "<img src=" + file + " alt='image' />";
   } else {
@@ -369,3 +371,16 @@ function shuffle(array) {
 
 questions = shuffle(questions);
 displayQuestion();
+
+function toggleTheme() {
+  const img = document.querySelector("#theme-svg");
+  const theme = document.querySelector("#theme");
+
+  if (theme.getAttribute("href") == "css/dark-theme.css") {
+    theme.href = "css/light-theme.css";
+    img.src = "assets/moon.svg";
+  } else {
+    theme.href = "css/dark-theme.css";
+    img.src = "assets/sun.svg";
+  }
+}

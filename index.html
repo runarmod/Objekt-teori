@@ -19,11 +19,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark-theme.css" id="theme" />
     <link rel="icon" href="assets/java-icon.png" />
+
     <title>Objekt teori</title>
   </head>
   <body>
+    <!-- Theme button toggle -->
+    <button id="theme-toggle" onclick="toggleTheme()">
+      <!-- <img src="assets/sun.svg" alt="sun" /> -->
+      <img src="assets/sun.svg" id="theme-svg" />
+    </button>
     <div id="wrapper">
       <main>
         <h2 id="question">Question</h2>
@@ -59,6 +67,6 @@
         </div>
       </main>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
