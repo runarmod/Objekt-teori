@@ -154,7 +154,7 @@ let questions = [
     sporsmal:
       "Hva er gyldig å skrive på høyresiden av uttrykket `y instanceof x`? (Hva er gyldige substitutter for x).",
     svar: "Interface",
-    alt: ["Objekt", "Primitiv type", "Boolean"],
+    alt: ["Objekt", "Primitiv type", "boolean"],
   },
 
   {
