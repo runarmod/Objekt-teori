@@ -258,6 +258,32 @@ let questions = [
       "Metoden burde utløse IllegalStateException",
     ],
   },
+
+  {
+    type: "forstoelse",
+    index: 7,
+    sporsmal:
+      "Hva blir printet til konsollen?",
+    svar: "15",
+    alt: [
+      "10",
+      "5",
+      "Error",
+    ],
+  },
+
+  {
+    type: "forstoelse",
+    index: 8,
+    sporsmal:
+      "Hva blir printet til konsollen?",
+    svar: "10",
+    alt: [
+      "15",
+      "5",
+      "Error",
+    ],
+  },
 ];
 
 function checkAnswer(answer) {
